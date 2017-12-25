@@ -1,0 +1,24 @@
+{
+    "name": "iankov/asset-v",
+    "description": "Automatic asset url version postfix",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Dmitriy Yankov",
+            "email": "incoming@ukr.net"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Iankov\\AssetV\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Iankov\\AssetV\\ServiceProvider"
+            ]
+        }
+    }
+}
