@@ -26,6 +26,8 @@ class ServiceProvider extends BaseServiceProvider
      */
     public function register()
     {
+        $this->mergeConfigFrom(__DIR__ . '/config/assetv.php', 'assetv');
+
         include __DIR__.'/helpers.php';
 
         $this->app->singleton('command.assetv.update', function($app) {
